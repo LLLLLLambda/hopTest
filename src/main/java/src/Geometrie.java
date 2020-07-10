@@ -12,16 +12,6 @@ public class Geometrie {
         return _isCarre;
     }
 
-    public static Boolean isRectangle(int a, int b) {
-        boolean _isCarre = false;
-
-        if (a > 0 && b > 0) {
-            _isCarre = a != b;
-        }
-
-        return _isCarre;
-    }
-
     public static float aireCarre(float a, float b) {
         float aire = 0;
 
@@ -46,7 +36,7 @@ public class Geometrie {
         boolean _isIsocele = false;
 
         if (ab > 0 && bc > 0 && ca > 0) {
-            _isIsocele = (ab == bc && ab != ca) || (bc == ca && bc != ab) || (ab == ca && ab != bc);
+            _isIsocele = ab == bc || bc == ca || ab == ca;
         }
 
         return _isIsocele;
