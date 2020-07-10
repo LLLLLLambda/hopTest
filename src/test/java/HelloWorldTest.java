@@ -2,8 +2,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-public class HelloWorldTest
-        extends TestCase
+public class HelloWorldTest extends TestCase
 {
     /**
      * Create the test case
